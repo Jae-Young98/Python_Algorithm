@@ -1,20 +1,22 @@
 # hw1-1
 
-# 2차원 리스트 1, 2번 인덱스 정수로 변환 해줘야함
 def bmi(N):
     list = []
     for i in range(N):
         info = input().split()
+        info = [info[0], int(info[1]), int(info[2])]
         list.append(info)
         list[i].append(bmi_calc(list[i][1], list[i][2]))
         list[i].append(Judge(list[i][3]))
     return list
+
 
 def bmi_calc(h, w):
     H = 0.01 * int(h)
     W = int(w)
     bmi = W / (H * H)
     return round(bmi, 2)
+
 
 def Judge(bmi):
     if bmi < 18.5:
@@ -27,5 +29,4 @@ def Judge(bmi):
         return '비만'
 
 
-
-print(bmi(1))
+print(bmi(3))
