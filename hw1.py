@@ -1,17 +1,17 @@
-# hw1-1
+# ex 1
 
 def bmi(N):
     list = []
     for i in range(N):
-        info = input().split()
-        info = [info[0], int(info[1]), int(info[2])]
-        list.append(info)
-        list[i].append(bmi_calc(list[i][1], list[i][2]))
+        userInfo = input().split()
+        userInfo = [userInfo[0], int(userInfo[1]), int(userInfo[2])]
+        list.append(userInfo)
+        list[i].append(calc_bmi(list[i][1], list[i][2]))
         list[i].append(Judge(list[i][3]))
     return list
 
 
-def bmi_calc(h, w):
+def calc_bmi(h, w):
     H = 0.01 * int(h)
     W = int(w)
     bmi = W / (H * H)
