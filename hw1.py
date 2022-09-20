@@ -1,5 +1,4 @@
 # ex 1
-
 def bmi(N):
     profiles = []
     for i in range(N):
@@ -50,12 +49,21 @@ def bmi_dict(profiles):
 # ex 4
 
 
-# def bmi_dictdict(pf_dict):
-#     newKey = ['height', 'weight', 'bmi', 'jedge']
-#     for k in pf_dict.keys():
-#         pf_dict[k] = dict(zip(newKey, k.values()))
-#     return pf_dict
+def bmi_dictdict(pf_dict):
+    pf_dd = {}
+    for key, value in pf_dict.items():
+        pf_dd[key] = key = {'height': value[0],
+                            'weight': value[1],
+                            'bmi': value[2],
+                            'judge': value[3]}
+    return pf_dd
 
 
 # bmis = bmi(3)
+# print(bmis)
+# light = bmi_list_min(bmis)
+# print(light)
+# bmis = bmi_dict(bmis)
+# print(bmis)
+# bmis = bmi_dictdict(bmis)
 # print(bmis)

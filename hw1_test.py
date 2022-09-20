@@ -21,9 +21,9 @@ print('\ndict of lists:')
 pprint(bmis)
 
 # hw1-4
-# bmis = bmi_dictdict(bmis)
-# print('\ndict of dicts:')
-# pprint(bmis)
+bmis = bmi_dictdict(bmis)
+print('\ndict of dicts:')
+pprint(bmis)
 
 # # hw1-5
 # bmis = bmi_dictdict_fix(bmis, 'height', lambda x: x + 1)
