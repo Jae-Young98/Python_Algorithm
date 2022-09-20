@@ -50,6 +50,5 @@ def bmi_dict(profiles):
     return userDict
 
 print(bmi(3))
-print(profiles)
 print(bmi_list_min(profiles))
 print(bmi_dict(profiles))
