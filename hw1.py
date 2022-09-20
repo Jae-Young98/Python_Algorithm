@@ -1,17 +1,14 @@
 # ex 1
-profiles = []
-
 
 def bmi(N):
-    list = []
+    profiles = []
     for i in range(N):
         userInfo = input().split()
         userInfo = [userInfo[0], int(userInfo[1]), int(userInfo[2])]
-        list.append(userInfo)
-        list[i].append(calc_bmi(list[i][1], list[i][2]))
-        list[i].append(Judge(list[i][3]))
-        profiles.append(list[i])
-    return list
+        profiles.append(userInfo)
+        profiles[i].append(calc_bmi(profiles[i][1], profiles[i][2]))
+        profiles[i].append(Judge(profiles[i][3]))
+    return profiles
 
 
 def calc_bmi(h, w):
@@ -53,12 +50,12 @@ def bmi_dict(profiles):
 # ex 4
 
 
-def bmi_dictdict(pf_dict):
-    newKey = ['height', 'weight', 'bmi', 'jedge']
-    for k in pf_dict.keys():
-        pf_dict[k] = dict(zip(newKey, k.values()))
-    return pf_dict
+# def bmi_dictdict(pf_dict):
+#     newKey = ['height', 'weight', 'bmi', 'jedge']
+#     for k in pf_dict.keys():
+#         pf_dict[k] = dict(zip(newKey, k.values()))
+#     return pf_dict
 
 
-bmis = bmi(3)
-print(bmi_dictdict(bmis))
+# bmis = bmi(3)
+# print(bmis)
