@@ -1,6 +1,7 @@
 # ex 1
 profiles = []
 
+
 def bmi(N):
     list = []
     for i in range(N):
@@ -44,12 +45,20 @@ def bmi_list_min(profiles):
 
 # ex 3
 def bmi_dict(profiles):
-    userDict = {}
+    pf_dict = {}
     for i in range(len(profiles)):
-        userDict[profiles[i][0]] = profiles[i][1:]
-    return userDict
+        pf_dict[profiles[i][0]] = profiles[i][1:]
+    return pf_dict
 
-print(bmi(3))
-print(profiles)
-print(bmi_list_min(profiles))
-print(bmi_dict(profiles))
+# ex 4
+
+
+def bmi_dictdict(pf_dict):
+    newKey = ['height', 'weight', 'bmi', 'jedge']
+    for k in pf_dict.keys():
+        pf_dict[k] = dict(zip(newKey, k.values()))
+    return pf_dict
+
+
+bmis = bmi(3)
+print(bmi_dictdict(bmis))
