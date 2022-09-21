@@ -13,5 +13,10 @@ def test(pf_dict):
                             'judge': value[3]}
     return pf_dd
 
+def test2(pf_dd, attr, update_func):
+    for key, value in pf_dd.items():
+        pf_dd[key][attr] 
 
-print(test(dict))
+sample2 = test2(dict, 'height', lambda x: x + 1)
+sample = test(dict)
+print(sample['ewcha']['height'])

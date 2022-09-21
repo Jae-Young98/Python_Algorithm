@@ -58,12 +58,16 @@ def bmi_dictdict(pf_dict):
                             'judge': value[3]}
     return pf_dd
 
+# ex 5
+def bmi_dictdict_fix(pf_dd, attr, update_func):
+    pass
 
-# bmis = bmi(3)
-# print(bmis)
-# light = bmi_list_min(bmis)
-# print(light)
-# bmis = bmi_dict(bmis)
-# print(bmis)
-# bmis = bmi_dictdict(bmis)
-# print(bmis)
+
+bmis = bmi(3)
+print(bmis)
+light = bmi_list_min(bmis)
+print(light)
+bmis = bmi_dict(bmis)
+print(bmis)
+bmis = bmi_dictdict(bmis)
+print(bmis)
