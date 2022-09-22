@@ -58,16 +58,6 @@ def bmi_dictdict(pf_dict):
 
 
 # hw1-5
-def bmi_dictdict(pf_dict):
-    pf_dd = {}
-    for key, value in pf_dict.items():
-        pf_dd[key] = key = {'height': value[0],
-                            'weight': value[1],
-                            'bmi': value[2],
-                            'judge': value[3]}
-    return pf_dd
-
-# ex 5
 
 
 def bmi_dictdict_fix(pf_dd, attr, update_func):
