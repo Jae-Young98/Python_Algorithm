@@ -2,7 +2,7 @@
 # bypark 158  41
 # jmhan	160  43
 
-from hw1 import *
+from hw1_skeleton import *
 from pprint import pprint
 
 # hw1-1
