@@ -67,8 +67,15 @@ def bmi_dictdict(pf_dict):
                             'judge': value[3]}
     return pf_dd
 
+# ex 5
+
+
+def bmi_dictdict_fix(pf_dd, attr, update_func):
+    pass
 
 # hw1-6
+
+
 def bmi_dictdict_filter(pf_dd, jfilter):
     # bmi_dictdict()를 실행한 결과가 pf_dd에 전달 된다.
     # jfilter='저체중'이 전달될 경우
